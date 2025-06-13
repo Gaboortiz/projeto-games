@@ -1,20 +1,15 @@
-function filterGames(platform) {
-  const cards = document.querySelectorAll('.card');
+function filterGames(category) {
+  let cards = document.querySelectorAll('.game-card');
 
   cards.forEach(card => {
-    const platforms = card.getAttribute('data-platform');
-
-    // Se for "all", remove hidden de todos
-    if (platform === 'all') {
-      card.classList.remove('hidden');
-    } 
-    // Se o card contém a plataforma, mostra
-    else if (platforms.includes(platform)) {
-      card.classList.remove('hidden');
-    } 
-    // Senão, esconde
-    else {
-      card.classList.add('hidden');
-    }
-  });
+    if (category === 'all') {
+      card.style.display = 'flex'; // corrigido: mostrar todos se for "all"
+    } else {
+      if (card.classList.contains(category)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    }
+  });
 }

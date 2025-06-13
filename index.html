@@ -1,64 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Lançamentos de Games 2025/2026</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Lançamentos de Games 2025/2026</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <section class="hero">
-        <h1>Lançamentos de Games 2025/2026</h1>
-    </section>
+  <h1>LANÇAMENTOS DE GAMES 2025/2026</h1>
 
-    <!-- Filter buttons -->
-     <div class="filter-buttons">
-        <button onclick="filterGames('All')">All</button>
-        <button onclick="filterGames('PS5')">PS5</button>
-        <button onclick="filterGames('PC')">PC</button>
-        <button onclick="filterGames('Xbox Series X/S')">Xbox Series X/S</button>
-     </div>
+  <div class="filter-buttons">
+    <button onclick="filterGames('all')">Todos</button>
+    <button onclick="filterGames('ps5')">PS5</button>
+    <button onclick="filterGames('pc')">PC</button>
+    <button onclick="filterGames('xbox')">Xbox Series X/S</button>
+  </div>
 
-     <!-- Container Top 3 jogos -->
-     <div class="container-top">
-        <div class="card" data-platform="PS5, Xbox Series X/S">
-            <img src="img/gta6_0050.jpeg" alt="Grand Theft Auto 6">
-            <h2>Grand Theft Auto 6</h2>
-            <p>Lançamento: 26 de maio de 2026</p>
-            <p>Plataforma: PS5 e Xbox Series X/S</p>
-        </div>
-     
-         <div class="card" data-platform="PS5 Xbox Series X/S PC">
-            <img src="img/mafiatheoldcountry_4318103.jpg" alt="Mafia: The Old Country">
-            <h2>Mafia: The Old Country</h2>
-            <p>Lançamento: 08 de Agosto de 2025</p>
-            <p>Plataforma: PS5, Xbox Series X/S e PC</p>
-        </div>
-        
-          <div class="card" data-platform="PS5">
-            <img src="img/hideokojimastruggles_4442643.jpg" alt="Death Stranding 2">
-            <h2>Death Stranding 2: On the Beach</h2>
-            <p>Lançamento: 26 de Junho de 2025</p>
-            <p>Plataforma: PS5</p>
-        </div>
+  <div class="games-container">
+    <div class="game-card ps5 xbox">
+      <img src="img/gta6_0050.jpeg" alt="Grand Theft Auto 6">
+      <h3>Grand Theft Auto 6</h3>
+      <p>Lançamento: 26 de maio de 2026</p>
+      <p>Plataformas: PS5, Xbox Series X/S</p>
+    </div>
 
-    <!-- Container Bottom 2 jogos -->    
-    <div class="container-bottom">
-        <div class="card" data-platform="PS5">
-            <img src="img/ghostofyotei_4351193.jpg" alt="Ghost Of Yotei">
-            <h2>Ghost Of Yotei</h2>
-            <p>Lançamento: 2 de Outubro de 2025</p>
-            <p>Plataforma: PS5</p>
-        </div>
-    
-        <div class="card" data-platform="PS5 Xbox Series X/S PC">
-            <img src="img/metalgearsolid_4028893.jpg" alt="Metal Gear Solid 3">
-            <h2>Metal Gear Solid 3: Snake Eater</h2>
-            <p>Lançamento: 28 de Agosto de 2025</p>
-            <p>Plataforma: PS5, Xbox Series X/S e PC</p>
-        </div>
-     </div>
+    <div class="game-card ps5 xbox pc">
+      <img src="img/mafiatheoldcountry_4318103.jpg" alt="Mafia">
+      <h3>Mafia: The Old Country</h3>
+      <p>Lançamento: 06 de agosto de 2025</p>
+      <p>Plataformas: PS5, Xbox Series X/S e PC</p>
+    </div>
 
-     <script src="script.js"></script>
+    <div class="game-card ps5">
+      <img src="img/hideokojimastruggles_4442643.jpg" alt="Death Stranding 2">
+      <h3>Death Stranding 2: On the Beach</h3>
+      <p>Lançamento: 26 de junho de 2025</p>
+      <p>Plataforma: PS5</p>
+    </div>
 
+    <div class="game-card ps5">
+      <img src="img/ghostofyotei_4351193.jpg" alt="Ghost of Yotei">
+      <h3>Ghost of Yotei</h3>
+      <p>Lançamento: 2 de outubro de 2025</p>
+      <p>Plataforma: PS5</p>
+    </div>
+
+    <div class="game-card ps5 xbox pc">
+      <img src="img/metalgearsolid_4028893.jpg" alt="Metal Gear Solid 3">
+      <h3>Metal Gear Solid 3: Snake Eater</h3>
+      <p>Lançamento: 28 de agosto de 2025</p>
+      <p>Plataformas: PS5, Xbox Series X/S e PC</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
